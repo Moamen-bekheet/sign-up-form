@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="screen" class="flex-container">
+        <div class="brand-logo">
+            <div id="Logo">
+                <img src="./odin-lined.png" alt="odin-logo">
+                <h1>Mo2</h1>
+            </div>
+            <footer class="artist-credits">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></footer>
+        </div>
+        <div class='website-meat'>
+            <h1>A lovable service!</h1>
+            <p>As the proud leader of this organization, I'd love to say, from the bottom of my heart: Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, labore quidem veniam esse officia minus. Tenetur reprehenderit fugiat minima ratione, necessitatibus illo cum, nisi aliquam sed quos officia doloribus atque?<br></p>
+            <form>
+                <fieldset>
+                    <legend>Let's do this!</legend>
+                    <div>
+                        <label>FIRST NAME</label><br/>
+                        <input type="text" name="fName" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label>LAST NAME</label><br/>
+                        <input type="text" name="lsName" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label>EMAIL</label><br/>
+                        <input type="email" name="email" required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label>PHONE</label><br/>
+                        <input type="tel" name="phoneNumber">
+                        <span></span>
+                    </div>
+                    <div>
+                        <label>PASSWORD</label><br/>
+                        <input type="password" name="password" id='password' required>
+                        <span></span>
+                    </div>
+                    <div>
+                        <label>CONFIRM PASSWORD</label><br/>
+                        <input type="password" name="passwordConfirmation" id='passwordConfirmation' required><br>
+                        <span class="error"></span>
+                    </div>
+                </fieldset><br>
+                <div class="form-button">
+                    <button type="submit">Create Account</button><br>
+                    <p>Already have an account? <a href="">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
