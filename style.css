@@ -411,6 +411,7 @@ img{
   font-family: 'Norse Bold';
   align-self: center;
   margin: 0;
+  text-align: center;
 }
 .artist-credits{
   color:white;
