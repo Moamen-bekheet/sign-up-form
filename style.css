@@ -476,7 +476,10 @@ button{
 input{
   border:0;
   box-shadow: 0px 1.5px 0px gray;
-  width:45%
+  width:30%;
+}
+.placeholder{
+  display: hidden;
 }
 input:focus{
   outline: none;
@@ -487,4 +490,51 @@ input:invalid{
 }
 input:required + span:after{
   content:'*';
+}
+@media (max-width: 950px) {
+  .brand-logo{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    grid-template-areas: 'logo'
+                          'footer'
+                          'gap';
+    grid-template-columns: auto;
+    grid-template-rows: auto auto 1fr;
+  }
+  .website-meat{
+    position: relative;
+    box-sizing: border-box;
+    z-index: 2;
+    top: 200px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .9);
+  }
+  fieldset{
+    box-shadow: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding:0; 
+    padding-left: 30px;
+  }
+  fieldset div{
+    width: 40%;
+  }
+  #Logo{
+    margin: 0;
+  }
+  #screen{
+    overflow:hidden;
+    overflow-y: scroll;
+  }
+  input{
+    background-color: rgba(255, 255, 255, .2);
+    width:65%;
+  }
+  .form-button{
+    margin-left: 0;
+  }
+  /* .artist-credits{
+    display: none;
+  } */
 }
